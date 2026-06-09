@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keen Animal Care | Cookies Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f3eb;
+            color: #3e2a1f;
+            line-height: 1.6;
+        }
+
+        /* Brown Theme Variables */
+        :root {
+            --brown-dark: #4a2c1a;
+            --brown-medium: #6b4423;
+            --brown-light: #8b6946;
+            --brown-pale: #d9c5a7;
+            --cream: #fdf8f0;
+            --accent: #b87c4f;
+            --error-red: #c73e3e;
+            --success-green: #2d6a4f;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--brown-dark), var(--brown-medium));
+            color: var(--cream);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--brown-pale);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #f5d742;
+            border-bottom: 2px solid #f5d742;
+            padding-bottom: 4px;
+        }
+
+        /* Cookies Hero */
+        .cookies-hero {
+            background: linear-gradient( rgba(74, 44, 26, 0.88), rgba(107, 68, 35, 0.88) ), url('https://placekitten.com/1600/350') center/cover no-repeat;
+            padding: 2.5rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .cookies-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cookies-hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Main content */
+        .cookies-content {
+            background: white;
+            border-radius: 32px;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+        }
+
+        .cookies-content h2 {
+            color: var(--brown-dark);
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .cookies-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .cookies-content h3 {
+            color: var(--brown-medium);
+            font-size: 1.3rem;
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cookies-content p {
+            margin-bottom: 1rem;
+            color: #3e2f22;
+        }
+
+        .cookies-content ul, .cookies-content ol {
+            margin: 1rem 0 1.2rem 2rem;
+        }
+
+        .cookies-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #fef4e8;
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem 1.8rem;
+            border-radius: 24px;
+            margin: 1.8rem 0;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fefaf5;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #e2d4c4;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .cookie-table th {
+            background-color: #e9dbc9;
+            color: var(--brown-dark);
+            font-weight: 600;
+        }
+        .cookie-table td {
+            background-color: #fffdf9;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--brown-pale);
+            padding: 0.2rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--brown-dark);
+            margin-right: 0.5rem;
+        }
+        .button-pref {
+            background: var(--brown-medium);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+        .button-pref:hover {
+            background: var(--accent);
+            transform: scale(0.98);
+        }
+        .consent-banner-mock {
+            background: #f2ebe1;
+            border-radius: 28px;
+            padding: 1.2rem 1.8rem;
+            margin: 2rem 0 0.5rem;
+            border: 1px solid #dac29c;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .last-updated {
+            font-style: italic;
+            color: var(--brown-light);
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2d4c4;
+            font-size: 0.9rem;
+        }
+        footer {
+            background: var(--brown-dark);
+            color: var(--brown-pale);
+            padding: 40px 0 20px;
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer-col h4 {
+            color: var(--cream);
+            margin-bottom: 15px;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--brown-light);
+            font-size: 0.9rem;
+        }
+        @media (max-width: 800px) {
+            .nav-links {
+                gap: 1rem;
+                margin-top: 10px;
+            }
+            .cookies-content {
+                padding: 1.5rem;
+            }
+            .cookies-hero h1 {
+                font-size: 1.8rem;
+            }
+            .cookie-table th, .cookie-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Keen<span>AnimalCare</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html" class="active">Cookies Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cookies-hero">
+        <div class="container">
+            <h1>🍪 Cookies & Similar Technologies</h1>
+            <p>Transparent, simple, and respectful — understand how we use cookies to improve your experience on Keen Animal Care website.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cookies-content">
+            <h2>🍪 What Are Cookies?</h2>
+            <p>Cookies are small text files placed on your device (computer, smartphone, or tablet) when you visit a website. They help us remember your preferences, enhance site performance, analyze traffic, and provide essential features such as form submissions and secure login. Cookies do not harm your device and cannot access personal files. This Cookies Policy explains the types of cookies we use, why we use them, and how you can control them.</p>
+
+            <div class="highlight-box">
+                <strong>🐾 Our Commitment:</strong> At Keen Animal Care, we believe in total transparency. We never use cookies to collect sensitive medical or payment information. Any data collected via cookies is anonymized where possible, and we never sell cookie data to third parties.
+            </div>
+
+            <h2>📊 Types of Cookies We Use</h2>
+            <p>Based on function and purpose, we classify cookies into four main categories. Below is a detailed breakdown:</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Category</th>
+                        <th>Purpose</th>
+                        <th>Examples & Lifespan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge">Strictly Necessary</span></td>
+                        <td>Essential for website functionality. Without these, services like navigation, appointment forms, or security features cannot work.</td>
+                        <td>Session cookies (expire after browser close), authentication cookies (24h). <br>Examples: PHPSESSID, csrf_token.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge">Performance & Analytics</span></td>
+                        <td>Collect anonymous data about how visitors interact with our site — which pages are most popular, load times, errors. Helps us improve user experience.</td>
+                        <td>Persistent (up to 2 years). <br>Examples: Google Analytics (_ga, _gid), Hotjar.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge">Functional</span></td>
+                        <td>Remember user choices (language, region, font size, cookie consent preferences) to offer personalized features.</td>
+                        <td>Persistent (1 year). <br>Examples: language_pref, cookie_consent_status.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge">Targeting / Advertising</span></td>
+                        <td>We currently DO NOT use third-party advertising cookies for retargeting or behavioral ads. However, if we partner with pet wellness campaigns, we will update this policy and seek explicit consent.</td>
+                        <td>Not actively used — reserved only with opt-in.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>🔧 Cookie Management & Your Consent</h2>
+            <p>When you first visit our website, a cookie consent banner appears, giving you control over non-essential cookies. You can accept all, reject optional cookies (except strictly necessary ones), or customize your preferences. Your choice is saved via a functional cookie. You may change your preferences at any time by clicking the "Cookie Preferences" link in the footer of our website or via your browser settings.</p>
+
+            <div class="consent-banner-mock">
+                <div><strong>🍪 Your cookie preferences matter:</strong> We respect your privacy. Manage how we use analytics and functional cookies below.</div>
+                <div>
+                    <button class="button-pref" id="mockAcceptAll" aria-label="Accept all cookies">Accept All</button>
+                    <button class="button-pref" id="mockRejectNonEssential" style="background-color:#6f4e2e;">Reject Non-Essential</button>
+                    <button class="button-pref" id="mockCustomize" style="background-color:#b87c4f;">Customize</button>
+                </div>
+            </div>
+            <p style="font-size:0.85rem; margin-top:0.5rem;"><em>* This demo simulates our cookie preference center. In production, selections would be saved via javascript and update consent status. Your actual consent choices are stored securely and never shared.</em></p>
+
+            <h2>🛠️ How to Disable or Delete Cookies in Your Browser</h2>
+            <p>Most browsers allow you to control cookies through their settings. You can block all cookies (including essential ones) but note that some website features may break (e.g., online appointment request forms). Here’s how to manage cookies in popular browsers:</p>
+            <ul>
+                <li><strong>Google Chrome:</strong> Settings → Privacy and security → Third-party cookies → Block or allow cookies.</li>
+                <li><strong>Mozilla Firefox:</strong> Options → Privacy & Security → Cookies and Site Data → Manage exceptions.</li>
+                <li><strong>Safari:</strong> Preferences → Privacy → Block all cookies (or manage per site).</li>
+                <li><strong>Microsoft Edge:</strong> Settings → Cookies and site permissions → Manage and delete cookies.</li>
+                <li><strong>Mobile devices:</strong> Refer to your device's settings under “Browser” or “Privacy.”</li>
+            </ul>
+            <p>For further guidance, visit <a href="https://www.allaboutcookies.org" target="_blank" style="color: var(--accent);">www.allaboutcookies.org</a>.</p>
+
+            <h2>📈 Third-Party Analytics Providers</h2>
+            <p>We use Google Analytics and Microsoft Clarity (only if enabled by your consent) to understand how users engage with our website. These services place cookies that generate pseudonymous usage data. IP addresses are anonymized before storage. For Google Analytics opt-out, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color: var(--accent);">Google Analytics Opt-out Browser Add-on</a>. We also use internal tracking to monitor form abandonment and improve our service — no personal pet data is attached.</p>
+
+            <div class="highlight-box">
+                <strong>✨ Do Not Track Signals:</strong> Our website respects the "Do Not Track" (DNT) setting if enabled in your browser. If DNT is active, we will disable non-essential analytics and marketing cookies automatically. However, strictly necessary cookies remain functional for core website operation.
+            </div>
+
+            <h2>⏳ Cookie Retention Periods</h2>
+            <p>Session cookies expire when you close your browser. Persistent cookies have varying lifespans: analytics cookies may last up to 24 months, while functional preference cookies are typically stored for 12 months. We do not use flash cookies (Local Shared Objects) or ever-lasting supercookies. You can manually clear all stored cookies at any time through browser settings.</p>
+            
+            <h2>📝 Updates to This Cookies Policy</h2>
+            <p>We may occasionally revise this Cookies Policy to reflect new technologies, regulatory changes (such as ePrivacy Directive or GDPR updates), or operational needs. Any material change will be highlighted on our website and via the cookie consent banner. The “Last Updated” date below indicates the latest revision. Your continued use of our website after changes signifies acceptance of the revised policy.</p>
+
+            <h2>📞 Questions or Concerns Regarding Cookies?</h2>
+            <p>If you need more information about our use of cookies or wish to access your cookie consent logs, please contact our Data Protection team:</p>
+            <ul>
+                <li>📧 <strong>privacy@keenanimalcare.com</strong> (Subject: Cookies Policy inquiry)</li>
+                <li>📞 <strong>(512) 555-7890</strong> — ask for Privacy Office</li>
+                <li>📬 <strong>Keen Animal Care, Attn: Privacy Officer, 1234 Pawsome Lane, Suite 200, Austin, TX 78701, USA</strong></li>
+            </ul>
+            <p>You also have the right to lodge a complaint with your local supervisory authority if you believe your cookie-related privacy rights have been infringed.</p>
+
+            <h2>🔐 How We Protect Cookie Data</h2>
+            <p>Cookie information is transmitted via encrypted HTTPS connections. Any analytics data we collect is aggregated and cannot be used to identify individual users or specific pets. We do not cross-reference cookie data with medical records or personal identifiers. Security measures include regular scans for vulnerabilities and access restrictions to analytics dashboards.</p>
+
+            <div style="background: #ede3d4; border-radius: 24px; padding: 1.5rem; margin: 1.5rem 0;">
+                <h3 style="margin-top:0; color: var(--brown-dark);">🍪 First-Party vs. Third-Party Cookies</h3>
+                <p>All cookies served on our domain (keenanimalcare.com) are first-party cookies, set by us. We do not embed third-party tracking cookies from unknown networks. However, our embedded video content (e.g., pet care tutorials from YouTube) may set third-party cookies if you interact with the video player. You can block third-party cookies via browser settings without affecting core site functions.</p>
+            </div>
+
+            <div class="last-updated">
+                <strong>Last Updated:</strong> March 20, 2025 | Effective Date: April 1, 2025<br>
+                This Cookies Policy is an integral part of our overall Privacy Policy and applies exclusively to the Keen Animal Care website and digital services. For more details about data processing beyond cookies, please review our main <a href="privacy.html" style="color: var(--accent);">Privacy Policy</a>.
+            </div>
+        </div>
+
+        <!-- additional compliance notice: detailed preference simulation message -->
+        <div style="background: #f9f2e6; border-radius: 28px; padding: 1.5rem; margin-bottom: 2.5rem; border: 1px solid #e7d8c2;">
+            <h3 style="color: var(--brown-dark); margin-bottom: 0.5rem;">⚙️ Your Cookie Preference Center (Interactive Demo)</h3>
+            <p>Use the buttons above to simulate consent choices. In the live environment, we use a Consent Management Platform (CMP) to record your preferences. You can withdraw consent any time. Essential cookies cannot be disabled as they ensure the website works correctly — including secure forms and navigation. For any issues changing preferences, contact our support.</p>
+            <div id="cookieFeedback" style="margin-top: 12px; font-size:0.9rem; font-weight:500;"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Keen Animal Care</h4>
+                    <p>Your partner in compassionate veterinary medicine and pet wellness.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact & Address</h4>
+                    <address>
+                        1234 Pawsome Lane, Suite 200<br>Austin, TX 78701<br>United States<br>
+                        <strong>Phone:</strong> +1 (512) 555-7890<br>
+                        <strong>Emergency:</strong> +1 (512) 555-0199
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 8am – 7pm<br>Sat: 9am – 4pm<br>Sun: Closed (Emergencies call hotline)</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Keen Animal Care. All rights reserved. This Cookies Policy explains our use of cookies and similar tracking technologies. 
+                We are dedicated to protecting your data and your pet’s wellbeing — and keeping your online experience transparent.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Interactive mock for cookie preference buttons (demo / educational)
+        const mockAcceptAll = document.getElementById('mockAcceptAll');
+        const mockRejectNonEssential = document.getElementById('mockRejectNonEssential');
+        const mockCustomize = document.getElementById('mockCustomize');
+        const feedbackDiv = document.getElementById('cookieFeedback');
+
+        function setCookieFeedback(message, type = 'info') {
+            if (feedbackDiv) {
+                feedbackDiv.innerHTML = `<span style="background:${type === 'success' ? '#eaf7e6' : '#fff0e0'}; padding:6px 12px; border-radius:40px; display:inline-block;">🍪 ${message}</span>`;
+                setTimeout(() => {
+                    if(feedbackDiv) feedbackDiv.innerHTML = '';
+                }, 4000);
+            }
+            // Also store in sessionStorage to simulate consent persistence for demo
+            if(type === 'success') {
+                if(message.includes('Accept All')) {
+                    sessionStorage.setItem('cookie_pref_demo', 'accept_all');
+                } else if (message.includes('Reject Non-Essential')) {
+                    sessionStorage.setItem('cookie_pref_demo', 'reject_non_essential');
+                } else if (message.includes('Customize')) {
+                    sessionStorage.setItem('cookie_pref_demo', 'custom_selection');
+                }
+            }
+        }
+
+        if (mockAcceptAll) {
+            mockAcceptAll.addEventListener('click', () => {
+                setCookieFeedback('You accepted all cookies (including analytics & functional).', 'success');
+                console.log('[Demo] Accepted all cookies — would set GA and preference cookies.');
+            });
+        }
+        if (mockRejectNonEssential) {
+            mockRejectNonEssential.addEventListener('click', () => {
+                setCookieFeedback('You rejected non-essential cookies. Only strictly necessary cookies remain active.', 'success');
+                console.log('[Demo] Only essential cookies enabled — analytics disabled.');
+            });
+        }
+        if (mockCustomize) {
+            mockCustomize.addEventListener('click', () => {
+                setCookieFeedback('Customize panel opened (demo): you could toggle analytics & functional cookies.', 'success');
+                alert('🍪 Customize Cookie Settings (Demo)\nIn the full website, a modal would appear allowing granular choices for Performance, Functional, and Targeting cookies. Essential cookies remain always on.');
+            });
+        }
+
+        // Show existing demo preference on page load (just to illustrate)
+        window.addEventListener('DOMContentLoaded', () => {
+            const storedPref = sessionStorage.getItem('cookie_pref_demo');
+            if (storedPref) {
+                const prefMessage = storedPref === 'accept_all' ? 'You previously accepted all cookies (demo session).' : 
+                                    (storedPref === 'reject_non_essential' ? 'You previously rejected non-essential cookies (demo).' : 'You saved custom cookie preferences (demo).');
+                if(feedbackDiv) {
+                    const infoMsg = document.createElement('div');
+                    infoMsg.style.marginTop = '8px';
+                    infoMsg.style.fontSize = '0.85rem';
+                    infoMsg.style.color = '#6b4423';
+                    infoMsg.innerHTML = `ℹ️ ${prefMessage} Use the buttons above to change your preference.`;
+                    feedbackDiv.appendChild(infoMsg);
+                    setTimeout(() => {
+                        if(infoMsg && infoMsg.remove) infoMsg.remove();
+                    }, 5000);
+                }
+            } else {
+                // initial state hint
+                if(feedbackDiv && !feedbackDiv.innerHTML) {
+                    feedbackDiv.innerHTML = '<span style="font-size:0.85rem; color:#8b6946;">⚡ No cookie preference stored yet — interact with the buttons above to simulate consent.</span>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

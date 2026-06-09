@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Keen Animal Care | Terms of Service – Legal & Usage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f3eb;
+            color: #3e2a1f;
+            line-height: 1.6;
+        }
+
+        :root {
+            --brown-dark: #4a2c1a;
+            --brown-medium: #6b4423;
+            --brown-light: #8b6946;
+            --brown-pale: #d9c5a7;
+            --cream: #fdf8f0;
+            --accent: #b87c4f;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--brown-dark), var(--brown-medium));
+            color: var(--cream);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--brown-pale);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f5d742;
+        }
+
+        .page-banner {
+            background: linear-gradient(105deg, #f0e7da 0%, #e3d4c0 100%);
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .page-banner h1 {
+            font-size: 3rem;
+            color: var(--brown-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-banner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #5a3e2a;
+        }
+
+        .legal-card {
+            background: var(--cream);
+            border-radius: 32px;
+            padding: 40px 35px;
+            margin: 50px auto;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+            border: 1px solid var(--brown-pale);
+        }
+
+        .legal-card h2 {
+            font-size: 1.8rem;
+            margin: 1.8rem 0 1rem 0;
+            color: var(--brown-dark);
+            border-left: 6px solid var(--accent);
+            padding-left: 20px;
+        }
+
+        .legal-card h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-card h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.5rem 0;
+            color: var(--brown-medium);
+        }
+
+        .legal-card p, .legal-card li {
+            margin-bottom: 0.9rem;
+            color: #3e2a1f;
+        }
+
+        .legal-card ul, .legal-card ol {
+            margin: 0.8rem 0 1.2rem 2rem;
+        }
+
+        .legal-card li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box {
+            background: #f9f1e6;
+            border-left: 6px solid var(--accent);
+            padding: 20px 28px;
+            border-radius: 28px;
+            margin: 28px 0;
+            font-style: normal;
+        }
+
+        .small-note {
+            font-size: 0.85rem;
+            color: #6b4f32;
+            border-top: 1px solid var(--brown-pale);
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: var(--brown-light);
+        }
+
+        footer {
+            background: var(--brown-dark);
+            color: var(--brown-pale);
+            padding: 40px 0 20px;
+            margin-top: 30px;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-col h4 {
+            color: var(--cream);
+            margin-bottom: 15px;
+        }
+
+        .footer-col p, .footer-col address {
+            font-style: normal;
+            line-height: 1.8;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--brown-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                margin-top: 10px;
+            }
+            .page-banner h1 {
+                font-size: 2.2rem;
+            }
+            .legal-card {
+                padding: 25px 20px;
+            }
+            .legal-card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Keen<span>AnimalCare</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Legal guidelines, user responsibilities, and the fine print that keeps our care compassionate & clear</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="legal-card">
+            <p><strong>Effective Date:</strong> January 1, 2025 | <strong>Last Updated:</strong> March 15, 2025</p>
+            <p>Welcome to Keen Animal Care (referred to as "Keen Animal Care," "we," "us," or "our"). By accessing our website (<a href="#" style="color: var(--accent);">www.keenanimalcare.com</a>), booking appointments, using telemedicine services, or engaging with our veterinary practice, you agree to comply with and be bound by the following Terms of Service ("Terms"). Please read them carefully. If you do not agree with any part of these Terms, you must not use our services or website.</p>
+
+            <!-- 1. SERVICES OVERVIEW -->
+            <h2>1. Veterinary & Digital Services Overview</h2>
+            <p>Keen Animal Care provides in-clinic veterinary examinations, diagnostics, surgeries, dental care, rehabilitation, holistic consultations, telemedicine follow-ups, and educational content (collectively "Services"). Our website offers informational resources, appointment scheduling, client portal access, and communication tools. All Services are intended for companion animals (dogs, cats, birds, reptiles, small mammals) under the supervision of licensed veterinarians.</p>
+            <div class="highlight-box">
+                <strong>⚠️ Emergency Disclaimer:</strong> If your pet is experiencing a life-threatening emergency, do not rely on digital communication. Call our emergency hotline immediately: <strong>+1 (512) 555-0199</strong> or visit the nearest 24-hour veterinary hospital.
+            </div>
+
+            <!-- 2. CLIENT RESPONSIBILITIES -->
+            <h2>2. Client Responsibilities & Informed Consent</h2>
+            <p>By using our Services, you acknowledge:</p>
+            <ul>
+                <li><strong>Accurate Information:</strong> You will provide true, complete medical history and behavioral details about your pet to ensure safe treatment.</li>
+                <li><strong>Financial Responsibility:</strong> You are responsible for all fees associated with Services, including examinations, procedures, medications, and third-party laboratory work. Payment is due at the time of service unless a prior payment plan has been approved in writing.</li>
+                <li><strong>Compliance with Treatment Plans:</strong> You agree to follow veterinary recommendations, administer medications as prescribed, and attend recheck appointments. Failure to do so may impact outcomes and release Keen Animal Care from liability.</li>
+                <li><strong>No Guarantee of Outcome:</strong> While we strive for excellence, veterinary medicine involves inherent risks. We do not guarantee specific results (e.g., cure, extended lifespan, or surgical success).</li>
+            </ul>
+
+            <!-- 3. TELEMEDICINE & VIRTUAL CARE TERMS -->
+            <h2>3. Telemedicine & Virtual Consultations</h2>
+            <p>We offer virtual consultations for non-emergency follow-ups, behavioral advice, and minor concerns. By consenting to telemedicine:</p>
+            <ul>
+                <li>You understand that limitations exist (inability to perform physical exams, palpations, or diagnostics).</li>
+                <li>Our veterinarians may prescribe medications only when a valid veterinarian-client-patient relationship (VCPR) exists. An initial in-person exam may be required before certain prescriptions.</li>
+                <li>You must provide a safe, private environment for the virtual call and disclose all relevant pet health information.</li>
+                <li>Recordings of telemedicine sessions are confidential but may be stored for medical records in compliance with veterinary regulations.</li>
+            </ul>
+
+            <!-- 4. APPOINTMENTS, CANCELLATIONS & NO-SHOW -->
+            <h2>4. Appointments, Cancellations & Late Fees</h2>
+            <p>We value your time and our team's schedule. Our policy is as follows:</p>
+            <ul>
+                <li><strong>Cancellation:</strong> Please notify us at least 24 hours in advance if you need to cancel or reschedule an appointment. Late cancellations (less than 24 hours) may incur a fee of $35 per scheduled slot.</li>
+                <li><strong>No-Show Policy:</strong> Missing an appointment without any notice will result in a $50 fee. Repeated no-shows may result in requiring a prepaid deposit for future bookings.</li>
+                <li><strong>Emergency Walk-ins:</strong> We welcome urgent cases during operating hours; however, triage priority is based on medical severity.</li>
+            </ul>
+
+            <!-- 5. WEBSITE USE & INTELLECTUAL PROPERTY -->
+            <h2>5. Website Use & Intellectual Property</h2>
+            <p>All content on this website — including text, graphics, logos, images, educational articles, and clinic branding — is the exclusive property of Keen Animal Care or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or republish any material without prior written consent. However, you may download or print a single copy for personal, non-commercial reference (e.g., pet care guides).</p>
+            <p>Unauthorized use of our trademarks "Keen Animal Care", the paw-logo, or any brand assets is strictly prohibited.</p>
+
+            <!-- 6. USER GENERATED CONTENT & REVIEWS -->
+            <h2>6. User Reviews & Submissions</h2>
+            <p>We welcome your feedback, testimonials, and questions. By submitting reviews, comments, photos, or other content ("User Content") to our website, social channels, or third-party review platforms, you grant Keen Animal Care a non-exclusive, royalty-free, perpetual license to use, modify, and display that content for promotional or educational purposes. You warrant that your content does not violate any third-party rights or contain false information. We reserve the right to remove any content we deem inappropriate, offensive, or misleading.</p>
+
+            <!-- 7. THIRD-PARTY LINKS & SERVICES -->
+            <h2>7. Third-Party Links & Integrated Services</h2>
+            <p>Our website may include links to external sites (e.g., payment processors, lab result portals, pet insurance providers). We do not control, endorse, or assume responsibility for the content or privacy practices of those third parties. Your interactions with external services are governed by their respective terms and policies. We recommend reviewing their terms before sharing personal data.</p>
+
+            <!-- 8. LIMITATION OF LIABILITY -->
+            <h2>8. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by Texas law, Keen Animal Care, its veterinarians, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of our Services, website, or any delay in treatment — including but not limited to loss of companionship, emotional distress, or economic loss. Our total liability arising from any claim related to veterinary services shall not exceed the total fees paid by you for the specific service giving rise to the claim.</p>
+            <p>Nothing in these Terms excludes or limits liability for death or personal injury caused by our negligence, fraud, or any other liability that cannot be excluded by law.</p>
+
+            <!-- 9. INDEMNIFICATION -->
+            <h2>9. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Keen Animal Care, its owners, employees, and contractors from any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or related to: (i) your violation of these Terms, (ii) your misuse of our Services, (iii) any inaccurate information provided by you regarding your pet's health or behavior, or (iv) your interaction with other pet owners via community features.</p>
+
+            <!-- 10. PRIVACY & DATA PROTECTION -->
+            <h2>10. Privacy & Medical Records</h2>
+            <p>Your privacy is critical. Our collection and use of personal and pet health information is governed by our <a href="privacy.html" style="color: var(--accent);">Privacy Policy</a> and <a href="cookies.html" style="color: var(--accent);">Cookies Policy</a>. Veterinary medical records are maintained in compliance with Texas Veterinary Board regulations. You may request copies of your pet's records; a reasonable administrative fee may apply for paper copies. We do not share your information with third parties except as necessary for treatment, payment, operations, or as required by law.</p>
+
+            <!-- 11. MODIFICATION & TERMINATION -->
+            <h2>11. Modification & Termination of Services</h2>
+            <p>Keen Animal Care reserves the right to modify, suspend, or discontinue any aspect of the Services (including website features) at any time without prior notice. We may also revise these Terms from time to time; material changes will be communicated via website notice or email. Continued use of our Services after changes constitutes acceptance of the revised Terms. We may terminate or restrict access to any user who breaches these Terms or engages in harmful conduct towards staff, clients, or animals.</p>
+
+            <!-- 12. GOVERNING LAW & DISPUTE RESOLUTION -->
+            <h2>12. Governing Law & Dispute Resolution</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of laws principles. Any dispute, claim, or controversy arising out of or relating to these Terms or our Services shall be first attempted to be resolved through good-faith negotiation. If unresolved, the dispute shall be submitted to binding arbitration in Travis County, Texas, administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules. Each party shall bear its own costs and attorney fees. You waive any right to participate in a class action or class-wide arbitration.</p>
+
+            <!-- 13. MEDICAL DISCLAIMER & EDUCATIONAL CONTENT -->
+            <h2>13. Medical Disclaimer: Not a Substitute for Professional Advice</h2>
+            <p>All informational content provided on the Keen Animal Care website (articles, blogs, FAQs) is for educational and general awareness purposes only. It does not constitute veterinary medical advice, diagnosis, or treatment recommendations. Always seek the advice of your veterinarian or another qualified veterinary professional with any questions regarding your pet’s medical condition. Never disregard professional advice or delay seeking it based on something you have read on our website. Reliance on any information provided by Keen Animal Care is solely at your own risk.</p>
+
+            <!-- 14. FEES, PAYMENTS & INSURANCE -->
+            <h2>14. Fees, Insurance & Billing</h2>
+            <p>We accept cash, credit cards, and CareCredit. Payment is due at the time services are rendered. If you carry pet insurance, we can provide medical records to assist with claims, but you are ultimately responsible for all charges. Keen Animal Care does not directly bill insurance providers unless pre-arranged with specific third-party administrators. Returned checks or declined credit cards may incur a $35 processing fee.</p>
+
+            <!-- 15. SEVERABILITY & ENTIRE AGREEMENT -->
+            <h2>15. Severability & Entire Agreement</h2>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect. These Terms, along with our Privacy Policy and any signed consent forms, constitute the entire agreement between you and Keen Animal Care regarding the use of our Services, superseding any prior agreements.</p>
+
+            <div class="highlight-box">
+                <strong>📞 Contact for Legal or Service Questions:</strong> If you have any questions regarding these Terms, please reach out to our administrative team:<br>
+                📧 legal@keenanimalcare.com | 📠 Fax: +1 (512) 555-7891 | 📍 1234 Pawsome Lane, Suite 200, Austin, TX 78701
+            </div>
+
+            <p><strong>By continuing to use our website, schedule appointments, or interact with Keen Animal Care, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong></p>
+
+            <div class="small-note">
+                <p>✨ Keen Animal Care respects your rights as a consumer. For complaints regarding veterinary services, you may contact the Texas State Board of Veterinary Medical Examiners at (512) 305-7555 or <a href="#" style="color: var(--accent);">www.veterinary.texas.gov</a>.</p>
+                <p>Last revised: March 15, 2025 — version 2.3</p>
+            </div>
+        </div>
+
+        <!-- additional call to action: back to about or homepage -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <a href="index.html" class="btn">🏠 Return to Homepage</a>
+            <a href="about.html" class="btn" style="background: var(--brown-light); margin-left: 15px;">🐾 Learn About Our Mission</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Keen Animal Care</h4>
+                    <p>Excellence with empathy — where every pet is family.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact & Address</h4>
+                    <address>
+                        1234 Pawsome Lane, Suite 200<br>
+                        Austin, TX 78701<br>
+                        United States<br>
+                        <strong>Phone:</strong> +1 (512) 555-7890<br>
+                        <strong>Emergency:</strong> +1 (512) 555-0199
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <p><a href="terms.html" style="color: var(--brown-pale); text-decoration: underline;">Terms of Service</a><br>
+                    <a href="privacy.html" style="color: var(--brown-pale); text-decoration: underline;">Privacy Policy</a><br>
+                    <a href="cookies.html" style="color: var(--brown-pale); text-decoration: underline;">Cookies Policy</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Keen Animal Care. All rights reserved. This content is for informational purposes and does not replace professional veterinary advice.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

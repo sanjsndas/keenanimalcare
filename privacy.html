@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keen Animal Care | Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f3eb;
+            color: #3e2a1f;
+            line-height: 1.6;
+        }
+
+        /* Brown Theme Variables */
+        :root {
+            --brown-dark: #4a2c1a;
+            --brown-medium: #6b4423;
+            --brown-light: #8b6946;
+            --brown-pale: #d9c5a7;
+            --cream: #fdf8f0;
+            --accent: #b87c4f;
+            --error-red: #c73e3e;
+            --success-green: #2d6a4f;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--brown-dark), var(--brown-medium));
+            color: var(--cream);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--brown-pale);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #f5d742;
+            border-bottom: 2px solid #f5d742;
+            padding-bottom: 4px;
+        }
+
+        /* Privacy Hero */
+        .privacy-hero {
+            background: linear-gradient( rgba(74, 44, 26, 0.88), rgba(107, 68, 35, 0.88) ), url('https://placekitten.com/1600/350') center/cover no-repeat;
+            padding: 2.5rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .privacy-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Main content */
+        .privacy-content {
+            background: white;
+            border-radius: 32px;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+        }
+
+        .privacy-content h2 {
+            color: var(--brown-dark);
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .privacy-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .privacy-content h3 {
+            color: var(--brown-medium);
+            font-size: 1.3rem;
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-content p {
+            margin-bottom: 1rem;
+            color: #3e2f22;
+        }
+
+        .privacy-content ul, .privacy-content ol {
+            margin: 1rem 0 1.2rem 2rem;
+        }
+
+        .privacy-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #fef4e8;
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem 1.8rem;
+            border-radius: 24px;
+            margin: 1.8rem 0;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: var(--brown-light);
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2d4c4;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--brown-dark);
+            color: var(--brown-pale);
+            padding: 40px 0 20px;
+            margin-top: 2rem;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-col h4 {
+            color: var(--cream);
+            margin-bottom: 15px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--brown-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 800px) {
+            .nav-links {
+                gap: 1rem;
+                margin-top: 10px;
+            }
+            .privacy-content {
+                padding: 1.5rem;
+            }
+            .privacy-hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Keen<span>AnimalCare</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="privacy-hero">
+        <div class="container">
+            <h1>🔒 Privacy Policy</h1>
+            <p>Your trust is our priority. Learn how Keen Animal Care protects your personal data and respects your privacy.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="privacy-content">
+            <h2>📜 Overview & Commitment</h2>
+            <p>At Keen Animal Care (“we,” “us,” or “our”), we are committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your data when you visit our website, use our contact forms, schedule appointments, or communicate with our veterinary team. We comply with applicable data protection laws, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) where relevant.</p>
+            
+            <div class="highlight-box">
+                <strong>🐾 Our promise:</strong> We never sell your personal data to third parties. Any information shared is used solely to provide exceptional veterinary care, improve your experience, and communicate important health information about your beloved companions.
+            </div>
+
+            <h2>📋 Information We Collect</h2>
+            <p>We may collect the following categories of information:</p>
+            <ul>
+                <li><strong>Personal Identifiers:</strong> Name, email address, phone number, postal address, and pet owner identification.</li>
+                <li><strong>Pet & Medical Records:</strong> Pet name, species, breed, age, medical history, vaccination records, prescriptions, and appointment details.</li>
+                <li><strong>Payment & Billing Data:</strong> Credit/debit card details (processed via secure PCI-compliant gateways), insurance information, and transaction history.</li>
+                <li><strong>Technical Information:</strong> IP address, browser type, device identifiers, and browsing behavior via cookies (see our <a href="cookies.html" style="color: var(--accent);">Cookies Policy</a>).</li>
+                <li><strong>Communication Records:</strong> Messages sent via our contact forms, emails, chat logs, or phone recordings for quality assurance and legal compliance.</li>
+            </ul>
+
+            <h2>🔍 How We Use Your Information</h2>
+            <p>We process your data for legitimate business purposes, including:</p>
+            <ul>
+                <li>✅ Scheduling, rescheduling, or canceling veterinary appointments.</li>
+                <li>✅ Providing emergency and routine medical care, prescription refills, and follow-up instructions.</li>
+                <li>✅ Sending appointment reminders, wellness tips, and important safety alerts.</li>
+                <li>✅ Processing payments, insurance claims, and refunds.</li>
+                <li>✅ Responding to inquiries, complaints, or feedback submitted via forms or email.</li>
+                <li>✅ Improving website functionality and user experience through analytics.</li>
+                <li>✅ Complying with legal obligations (e.g., public health reporting, subpoenas).</li>
+            </ul>
+
+            <h2>🛡️ Data Sharing & Third Parties</h2>
+            <p>We do not sell, rent, or trade your personal information. However, we may share data with trusted partners solely to operate our practice:</p>
+            <ul>
+                <li><strong>Veterinary Labs & Referral Specialists:</strong> To process diagnostic tests or coordinate advanced care.</li>
+                <li><strong>Payment Processors:</strong> Stripe, Square, or similar for secure transactions (they never retain data longer than necessary).</li>
+                <li><strong>Email & SMS Providers:</strong> To send appointment reminders (you may opt out anytime).</li>
+                <li><strong>Legal & Regulatory Authorities:</strong> When required by law or to protect the safety of persons, animals, or property.</li>
+            </ul>
+            <p>All third-party vendors sign data protection agreements ensuring your information remains confidential and used only for specified services.</p>
+
+            <h2>🍪 Cookies & Tracking Technologies</h2>
+            <p>Our website uses essential and analytical cookies to enhance your browsing experience. Essential cookies are necessary for core functionality (e.g., form submission). Analytical cookies help us understand page traffic and improve site structure. You can manage cookie preferences via your browser settings or our cookie consent manager. For detailed information, please review our <a href="cookies.html" style="color: var(--accent);">Cookies Policy</a>.</p>
+
+            <h2>🔐 Data Security & Retention</h2>
+            <p>We implement administrative, technical, and physical safeguards to protect your data, including encryption, firewalls, access controls, and regular security audits. Your medical records are stored in HIPAA-compliant veterinary software. Payment information is tokenized and not stored on our local servers.</p>
+            <p>We retain personal data as long as necessary to fulfill the purposes outlined in this policy, or as required by law (typically 7 years for medical records in accordance with veterinary practice regulations). After that, data is anonymized or securely deleted.</p>
+
+            <h2>👤 Your Privacy Rights</h2>
+            <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a copy of the personal information we hold about you.</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete information.</li>
+                <li><strong>Right to Erasure (“Right to be Forgotten”):</strong> Request deletion of your data, subject to legal retention requirements.</li>
+                <li><strong>Right to Restrict Processing:</strong> Limit how we use your information.</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+                <li><strong>Right to Object:</strong> Opt out of marketing communications or certain processing activities.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact our Privacy Officer at <strong>privacy@keenanimalcare.com</strong> or call <strong>(512) 555-7890</strong>. We will respond within 30 days. We never discriminate against you for exercising your privacy rights.</p>
+
+            <div class="highlight-box">
+                <strong>📧 Marketing & Newsletters:</strong> You may unsubscribe from promotional emails at any time by clicking the “unsubscribe” link at the bottom of our emails. Even if you opt out of marketing, we may still send non-promotional communications (e.g., appointment confirmations, medical alerts).
+            </div>
+
+            <h2>👶 Children’s Privacy</h2>
+            <p>Our services are directed to pet owners and adults. We do not knowingly collect personal information from children under 13. If we discover we have inadvertently collected such data, we will delete it promptly. Parents or guardians may contact us to request removal.</p>
+
+            <h2>🌍 International Data Transfers</h2>
+            <p>Keen Animal Care operates primarily in the United States. If you are accessing our website from outside the US, please be aware that your information may be transferred to, stored, and processed in the US where our servers are located. By using our services, you consent to this transfer. We ensure appropriate safeguards (e.g., Standard Contractual Clauses) are in place for EU/UK users as required by law.</p>
+
+            <h2>⚕️ Veterinary Medical Records & Confidentiality</h2>
+            <p>As a veterinary practice, we are bound by professional ethics and state laws to maintain confidentiality of patient records. We will not disclose your pet's medical records without your written consent, except as permitted by law (e.g., transferring records to another vet, public health reporting for zoonotic diseases, or court order). You may request copies of your pet's records at any time; a reasonable administrative fee may apply for paper copies.</p>
+
+            <h2>📝 Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy periodically to reflect changes in legal requirements, our data practices, or industry standards. The “Last Updated” date at the bottom indicates when the policy was revised. For material changes, we will provide prominent notice on our website or via email. Your continued use of our services after the effective date constitutes acceptance of the updated policy.</p>
+
+            <h2>📞 Contact Us About Privacy</h2>
+            <p>If you have questions, concerns, or wish to file a complaint regarding our privacy practices, please reach out:</p>
+            <ul>
+                <li><strong>Email:</strong> privacy@keenanimalcare.com (preferred for data requests)</li>
+                <li><strong>Mail:</strong> Attn: Privacy Officer, Keen Animal Care, 1234 Pawsome Lane, Suite 200, Austin, TX 78701, USA</li>
+                <li><strong>Phone:</strong> (512) 555-7890 (ask for Privacy Compliance)</li>
+            </ul>
+            <p>You also have the right to lodge a complaint with your local data protection authority (e.g., the FTC or your state Attorney General) if you believe we have violated applicable privacy laws.</p>
+
+            <div class="last-updated">
+                <strong>Last Updated:</strong> March 15, 2025 | Effective Date: April 1, 2025<br>
+                *This Privacy Policy applies solely to information collected by Keen Animal Care and not to any third-party websites linked from our site.
+            </div>
+        </div>
+
+        <!-- additional unique section: notice of breach procedures -->
+        <div style="background: #fff7eb; border-radius: 28px; padding: 1.8rem; margin-bottom: 2rem; border: 1px solid #e6d5bd;">
+            <h3 style="color: var(--brown-dark); margin-bottom: 0.5rem;">🔔 Data Breach Notification</h3>
+            <p>In the unlikely event of a data breach that poses a risk to your rights and freedoms, we will notify affected individuals and relevant supervisory authorities within 72 hours of becoming aware, as required by law. Our incident response team will take immediate steps to contain and investigate the breach, and provide guidance on protective measures you can take. Transparency and trust are at the core of everything we do.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Keen Animal Care</h4>
+                    <p>Your partner in compassionate veterinary medicine and pet wellness.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact & Address</h4>
+                    <address>
+                        1234 Pawsome Lane, Suite 200<br>Austin, TX 78701<br>United States<br>
+                        <strong>Phone:</strong> +1 (512) 555-7890<br>
+                        <strong>Emergency:</strong> +1 (512) 555-0199
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 8am – 7pm<br>Sat: 9am – 4pm<br>Sun: Closed (Emergencies call hotline)</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Keen Animal Care. All rights reserved. This Privacy Policy is for informational purposes and does not replace professional legal advice. 
+                We are committed to protecting your data and your pet’s wellbeing.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
